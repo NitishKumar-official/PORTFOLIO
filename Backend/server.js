@@ -43,10 +43,6 @@ app.get('/project', async (req, res) => {
   }
 });
 
-
-  
-
-
 const PORT = 5000;
 
 app.listen(PORT, () => 
