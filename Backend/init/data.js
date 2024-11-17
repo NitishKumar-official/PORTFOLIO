@@ -1,0 +1,130 @@
+const projects = [
+    {
+      title: "Portfolio Website",
+      description: "A personal portfolio showcasing my projects and skills.",
+      technologies: ["React", "CSS", "JavaScript"],
+      link: {
+        live: "https://myportfolio.com",
+        github: "https://github.com/username/portfolio-website",
+      },
+      images: ["https://myportfolio.com/img1.png", "https://myportfolio.com/img2.png"],
+      completionDate: new Date("2023-04-15"),
+      isFeatured: true,
+      tags: ["portfolio", "personal website"],
+    },
+    {
+      title: "E-commerce Platform",
+      description: "An e-commerce site for selling electronic products.",
+      technologies: ["React", "Node.js", "MongoDB", "Express"],
+      link: {
+        live: "https://ecommerce.com",
+        github: "https://github.com/username/ecommerce-platform",
+      },
+      images: ["https://ecommerce.com/img1.png"],
+      completionDate: new Date("2023-06-01"),
+      isFeatured: true,
+      tags: ["e-commerce", "full stack"],
+    },
+    {
+      title: "Chat Application",
+      description: "A real-time chat application using WebSockets.",
+      technologies: ["Node.js", "Socket.io", "MongoDB"],
+      link: {
+        github: "https://github.com/username/chat-app",
+      },
+      images: ["https://chatapp.com/img1.png"],
+      completionDate: new Date("2023-03-12"),
+      isFeatured: false,
+      tags: ["chat", "real-time"],
+    },
+    {
+      title: "Task Management App",
+      description: "A task manager to help organize daily tasks with reminders.",
+      technologies: ["Vue.js", "Firebase", "Tailwind CSS"],
+      link: {
+        live: "https://taskmanager.com",
+        github: "https://github.com/username/task-manager",
+      },
+      completionDate: new Date("2023-01-20"),
+      isFeatured: false,
+      tags: ["task management", "productivity"],
+    },
+    {
+      title: "Recipe Finder",
+      description: "A web app for finding recipes based on ingredients.",
+      technologies: ["React", "Node.js", "API"],
+      link: {
+        github: "https://github.com/username/recipe-finder",
+      },
+      images: ["https://recipefinder.com/img1.png"],
+      completionDate: new Date("2023-07-15"),
+      isFeatured: true,
+      tags: ["recipes", "cooking"],
+    },
+    {
+      title: "Weather App",
+      description: "A weather app displaying real-time weather data for any city.",
+      technologies: ["HTML", "CSS", "JavaScript", "API"],
+      link: {
+        live: "https://weatherapp.com",
+        github: "https://github.com/username/weather-app",
+      },
+      images: ["https://weatherapp.com/img1.png"],
+      completionDate: new Date("2022-11-05"),
+      isFeatured: false,
+      tags: ["weather", "API"],
+    },
+    {
+      title: "Blog CMS",
+      description: "A content management system for creating and managing blog posts.",
+      technologies: ["Next.js", "MongoDB", "Tailwind CSS"],
+      link: {
+        github: "https://github.com/username/blog-cms",
+      },
+      completionDate: new Date("2023-02-14"),
+      isFeatured: true,
+      tags: ["blog", "CMS"],
+    },
+    {
+      title: "Social Media Dashboard",
+      description: "A dashboard for managing social media metrics and analytics.",
+      technologies: ["Angular", "Node.js", "MySQL"],
+      link: {
+        live: "https://smdashboard.com",
+        github: "https://github.com/username/social-media-dashboard",
+      },
+      images: ["https://smdashboard.com/img1.png", "https://smdashboard.com/img2.png"],
+      completionDate: new Date("2023-05-10"),
+      isFeatured: false,
+      tags: ["social media", "dashboard"],
+    },
+    {
+      title: "Online Learning Platform",
+      description: "An online platform for hosting educational courses and quizzes.",
+      technologies: ["Django", "React", "PostgreSQL"],
+      link: {
+        live: "https://onlinelearning.com",
+        github: "https://github.com/username/online-learning",
+      },
+      images: ["https://onlinelearning.com/img1.png"],
+      completionDate: new Date("2023-09-01"),
+      isFeatured: true,
+      tags: ["education", "learning"],
+    },
+    {
+      title: "Travel Guide App",
+      description: "An app providing travel guides and information for various destinations.",
+      technologies: ["Flutter", "Firebase"],
+      link: {
+        live: "https://travelguide.com",
+        github: "https://github.com/username/travel-guide",
+      },
+      images: ["https://travelguide.com/img1.png", "https://travelguide.com/img2.png"],
+      completionDate: new Date("2023-08-20"),
+      isFeatured: false,
+      tags: ["travel", "guide"],
+    },
+  ];
+  
+module.exports = { data: projects };
+  

@@ -1,0 +1,108 @@
+/* Basic Layout */
+.skills {
+
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+  }
+  
+  .heading {
+    font-size: 3rem;
+    color: #0AF0D1;
+    position: relative;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    display: inline-block;
+    animation: neon-glow 2s infinite alternate;
+  }
+  
+  .heading span {
+    color: #0AF0D1;
+  }
+  
+  .skills-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 40px;
+  }
+  
+  .skills-column {
+    flex: 1;
+    min-width: 300px;
+    max-width: 500px;
+    padding: 20px;
+    background: #1D213B;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+  }
+  
+  .title {
+    color: #0AF0D1;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    position: relative;
+    animation: title-fade 1s ease;
+  }
+  
+  .skills-box {
+    position: relative;
+  }
+  
+  .progress {
+    margin-bottom: 20px;
+    position: relative;
+  }
+  
+  .progress h3 {
+    display: flex;
+    justify-content: space-between;
+    color: #ffffff;
+    font-size: 1rem;
+    margin: 0;
+  }
+  
+  .bar {
+    height: 8px;
+    background: #353A5E;
+    border-radius: 4px;
+    margin-top: 5px;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .bar span {
+    display: block;
+    height: 100%;
+    background: linear-gradient(90deg, #00d4ff, #00b3cc);
+    border-radius: 4px;
+    animation: fill-bar 2s ease;
+  }
+  
+  @keyframes fill-bar {
+    0% { width: 0; }
+    100% { width: 100%; }
+  }
+  
+  /* Hover Effects */
+  .skills-column:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+  }
+  
+  .skills-column:hover .title {
+    color: #00D4FF;
+  }
+  
+  /* Neon Animation */
+  @keyframes neon-glow {
+    0% { text-shadow: 0 0 5px #0AF0D1, 0 0 10px #0AF0D1, 0 0 15px #0AF0D1; }
+    100% { text-shadow: 0 0 20px #00B3CC, 0 0 30px #00B3CC, 0 0 40px #00B3CC; }
+  }
+  
+  @keyframes title-fade {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
