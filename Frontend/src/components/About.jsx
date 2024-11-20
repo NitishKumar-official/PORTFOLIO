@@ -9,7 +9,7 @@ function About() {
         </h2>
 
         <div className="about-img">
-          <img src="../src/components/Img/12.jpg" alt="about img" />
+        <img src="/images/12.jpg" alt="about img" />
           <span className="circle-spin"></span>
         </div>
 
