@@ -4,29 +4,29 @@ const Schema = mongoose.Schema;
 const projectSchema = new Schema({
     title: {
         type: String,
-        required: true,
+        // required: true,
         trim: true,
       },
       description: {
         type: String,
-        required: true,
+        // required: true,
         trim: true,
       },
       technologies: [
         {
           type: String,
-          required: true,
+          // required: true,
         },
       ],
       link: {
         live: {
           type: String, // Link to the deployed project
-          required: false,
+          // required: false,
           trim: true,
         },
         github: {
           type: String, // Link to the GitHub repository
-          required: true,
+          // required: true,
           trim: true,
         },
       },

@@ -15,6 +15,7 @@ app.use(express.json());
 
 
 
+
 // const MONGO_URL = "mongodb://localhost:27017/portfolio";
 const MONGO_URL = process.env.ATLASDB_URL
 
@@ -42,6 +43,38 @@ app.get('/project', async (req, res) => {
     res.status(500).send({ error: "Failed to fetch projects" });
   }
 });
+app.post("/project", async (req, res) => {
+  try {
+    const { title, description, technologies, link, images, completionDate, isFeatured, tags } = req.body;
+
+    // Validation
+    if (!title || !description) {
+      return res.status(400).json({ error: "Title and description are required" });
+    }
+
+    // Create a new project
+    const newProject = new ListProj({
+      title,
+      description,
+      technologies,
+      link,
+      images,
+      completionDate,
+      isFeatured,
+      tags,
+    });
+
+    // Save to the database
+    const savedProject = await newProject.save();
+
+    res.status(201).json({ message: "Project added successfully", project: savedProject });
+  } catch (error) {
+    console.error("Error adding project:", error);
+    res.status(500).json({ error: "Failed to add project" });
+  }
+});
+
+
 
 const PORT = 5000;
 
